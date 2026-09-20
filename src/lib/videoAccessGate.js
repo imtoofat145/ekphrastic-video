@@ -2,7 +2,7 @@ import {
   gateRequiresPayloadList,
   readProtectionMetadata,
   resolveProtectedAccessGate
-} from '../../../shared/asset-access/index.js'
+} from '../../shared/asset-access/index.js'
 
 /**
  * Resolve access gate for a loaded video asset.
@@ -30,3 +30,4 @@ export function resolveVideoAccessFromAssetMeta(assetMeta) {
     payloadListId: protection.payloadListId
   }
 }
+

@@ -3,7 +3,7 @@ import { describe, expect, it, vi, afterEach } from 'vitest'
 import { cleanup, render, screen, fireEvent, waitFor } from '@testing-library/react'
 import { ProtectedResourceAccess } from './ProtectedResourceAccess.jsx'
 
-vi.mock('../../../../shared/asset-access/index.js', async (importOriginal) => {
+vi.mock('../../../shared/asset-access/index.js', async (importOriginal) => {
   const actual = await importOriginal()
   return {
     ...actual,
@@ -15,7 +15,7 @@ vi.mock('../../../../shared/asset-access/index.js', async (importOriginal) => {
 import {
   verifyAssetEmailDomainAccess,
   verifyAssetPassword
-} from '../../../../shared/asset-access/index.js'
+} from '../../../shared/asset-access/index.js'
 
 describe('ProtectedResourceAccess', () => {
   afterEach(() => {
@@ -171,3 +171,4 @@ describe('ProtectedResourceAccess', () => {
     })
   })
 })
+

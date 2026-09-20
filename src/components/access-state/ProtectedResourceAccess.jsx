@@ -25,7 +25,7 @@ import {
   extractEmailDomain,
   verifyAssetEmailDomainAccess,
   verifyAssetPassword
-} from '../../../../shared/asset-access/index.js'
+} from '../../../shared/asset-access/index.js'
 
 const ACCESS_DECORATION_COLOR = '#1565c0'
 
@@ -564,3 +564,4 @@ export function ProtectedResourceAccess({
     </Box>
   )
 }
+

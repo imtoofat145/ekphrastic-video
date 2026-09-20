@@ -1,0 +1,3 @@
+[submodule "shared/asset-access"]
+	path = shared/asset-access
+	url = https://github.com/imtoofat145/ekphrastic-asset-access.git

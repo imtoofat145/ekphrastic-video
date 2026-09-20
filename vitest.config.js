@@ -4,21 +4,15 @@ import { defineConfig } from 'vitest/config'
 import react from '@vitejs/plugin-react'
 
 const videoRoot = path.dirname(fileURLToPath(import.meta.url))
-const packRoot = path.resolve(videoRoot, '..')
 
 export default defineConfig({
   plugins: [react()],
   root: videoRoot,
-  server: {
-    fs: {
-      allow: [packRoot]
-    }
-  },
   test: {
     environment: 'happy-dom',
     include: [
       'src/**/*.{test,spec}.{js,jsx}',
-      '../shared/asset-access/**/*.test.js'
+      'shared/asset-access/**/*.test.js'
     ],
     server: {
       deps: {

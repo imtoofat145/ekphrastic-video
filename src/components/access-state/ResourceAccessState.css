@@ -1,0 +1,154 @@
+.resource-access-state-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  background: var(--surface-2, #f8f9fb);
+  box-sizing: border-box;
+}
+
+.resource-access-state-card {
+  width: 100%;
+  max-width: 640px;
+  min-height: min(720px, calc(100vh - 48px));
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-0, #ffffff);
+  border: 1px solid #ececec;
+  border-radius: var(--radius-card, 16px);
+  box-shadow: var(--shadow-card, 0 1px 3px rgba(15, 23, 42, 0.05));
+  overflow: hidden;
+}
+
+.resource-access-state-header {
+  height: 72px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  border-bottom: 1px solid #ececec;
+}
+
+.resource-access-state-app-label {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text-primary, #111827);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.resource-access-state-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 32px 40px;
+  text-align: center;
+}
+
+.resource-access-state-icon-wrap {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+  margin-bottom: 28px;
+  color: var(--text-muted, #9ca3af);
+}
+
+.resource-access-state-icon-wrap .MuiSvgIcon-root {
+  display: block;
+}
+
+.resource-access-state-title {
+  margin: 0 0 12px;
+  font-size: clamp(1.375rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: var(--text-primary, #111827);
+}
+
+.resource-access-state-description {
+  margin: 0;
+  max-width: 420px;
+  font-size: clamp(0.9375rem, 2vw, 1rem);
+  line-height: 1.6;
+  color: var(--text-secondary, #6b7280);
+}
+
+.resource-access-state-description-line {
+  display: block;
+}
+
+.resource-access-state-panel {
+  width: 100%;
+  max-width: 520px;
+  margin-top: 40px;
+  padding: 16px 18px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  text-align: left;
+  background: #f5f9ff;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.resource-access-state-panel-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--text-muted, #9ca3af);
+}
+
+.resource-access-state-panel-icon .MuiSvgIcon-root {
+  display: block;
+}
+
+.resource-access-state-panel-content {
+  min-width: 0;
+}
+
+.resource-access-state-panel-title {
+  margin: 0 0 4px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-primary, #111827);
+}
+
+.resource-access-state-panel-text {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--text-secondary, #6b7280);
+}
+
+@media (max-width: 640px) {
+  .resource-access-state-page {
+    padding: 12px;
+  }
+
+  .resource-access-state-card {
+    min-height: calc(100vh - 24px);
+  }
+
+  .resource-access-state-header {
+    height: 64px;
+    padding: 0 16px;
+  }
+
+  .resource-access-state-body {
+    padding: 24px 20px 32px;
+  }
+
+  .resource-access-state-panel {
+    margin-top: 32px;
+  }
+}

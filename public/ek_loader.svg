@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="34"
+  height="34"
+  viewBox="0 0 34 34"
+  role="img"
+  aria-label="Loading"
+>
+  <defs>
+    <style>
+      .bg {
+        fill: none;
+        stroke: rgba(0, 0, 0, 0.12);
+        stroke-width: 4;
+      }
+      .fg {
+        fill: none;
+        stroke: #333333;
+        stroke-width: 4;
+        stroke-linecap: butt;
+        stroke-dasharray: 18 999;
+      }
+      .spin {
+        transform-origin: 17px 17px;
+        animation: spin 0.9s linear infinite;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </defs>
+  <circle class="bg" cx="17" cy="17" r="15" />
+  <g class="spin">
+    <circle class="fg" cx="17" cy="17" r="15" transform="rotate(-90 17 17)" />
+  </g>
+</svg>
